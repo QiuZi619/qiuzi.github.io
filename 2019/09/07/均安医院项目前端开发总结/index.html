@@ -408,7 +408,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.4k
+                        1.5k
                     </div>
                     
 
@@ -451,7 +451,7 @@
 <li>Nginx 反向代理</li>
 <li>插件（Allow-Control-Allow-Origin）</li>
 </ul>
-<h3 id="5-修改-antd-mobile-默认样式"><a href="#5-修改-antd-mobile-默认样式" class="headerlink" title="5.修改 antd-mobile  默认样式"></a>5.修改 antd-mobile  默认样式</h3><p>  <strong>问题：</strong> 因项目需求，需要更改 UI 库的默认样式<br>  <strong>解决：</strong> 进行样式代码覆盖，==注意：==</p>
+<h3 id="5-修改-antd-mobile-默认样式"><a href="#5-修改-antd-mobile-默认样式" class="headerlink" title="5.修改 antd-mobile  默认样式"></a>5.修改 antd-mobile  默认样式</h3><p>  <strong>问题：</strong> 因项目需求，需要更改 UI 库的默认样式<br>  <strong>解决：</strong> 进行样式代码覆盖，<strong>注意</strong></p>
 <ul>
 <li>要覆盖的类名要复制正确，避免进行样式污染</li>
 <li>样式类名覆盖之前，需要添加引用页面的标识类名，避免全局样式污染;<br>如，A页面： .classA .覆盖样式 ；B页面：.classB .覆盖样式</li>
@@ -468,7 +468,7 @@
 </ul>
 <h3 id="2-项目初启动动画"><a href="#2-项目初启动动画" class="headerlink" title="2.项目初启动动画"></a>2.项目初启动动画</h3><p>  <strong>问题：</strong> 在初启动页面中添加加载动画，必须加载完包数据才显示出来，时间较长，严重影响用户体验<br>  <strong>解决：</strong> 在项目根目录中（index.html)，添加 DOMContentLoaded 函数进行动画处理</p>
 <h3 id="3-项目首屏渲染过慢"><a href="#3-项目首屏渲染过慢" class="headerlink" title="3. 项目首屏渲染过慢"></a>3. 项目首屏渲染过慢</h3><p>  <strong>问题：</strong> webpack 打包应用时，将整个应用打包成一个 js 文件，当应用规模过大时，造成首屏渲染速度过慢，影响用户体验<br>  <strong>解决：</strong> 项目进行代码分割，路由动态加载</p>
-<h3 id="4-空数据处理"><a href="#4-空数据处理" class="headerlink" title="4.空数据处理"></a>4.空数据处理</h3><p>  <strong>问题：</strong> 某些接口获取到数据为空，直接影响到页面展现<br>  <strong>解决：</strong> 对数据进行判断处理，例如添加空数据处理页面，提升用户体验</p>
+<h3 id="4-空数据处理"><a href="#4-空数据处理" class="headerlink" title="4.空数据处理"></a>4.空数据处理</h3><p>  <strong>问题：</strong> 某些接口获取到数据为空，直接影响到页面展现<br>  <strong>解决：</strong> 对数据进行判断处理，例如添加空数据处理页面，提升用户体验（空参数处理，常用 param == undefined 进行判断)</p>
 <h2 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h2><h3 id="1-使用-React-Native-React-Redux-snippets-for-es6-es7-插件"><a href="#1-使用-React-Native-React-Redux-snippets-for-es6-es7-插件" class="headerlink" title="1.使用 React-Native/React/Redux snippets for es6/es7 插件"></a>1.使用 React-Native/React/Redux snippets for es6/es7 插件</h3><p>  <strong>问题：</strong> 如何快速生成 React 文件模板<br>  <strong>解决：</strong> 上面那个插件，常用快捷命令 imrc和 cccs，具体查看插件用法</p>
 <h3 id="2-编码规范"><a href="#2-编码规范" class="headerlink" title="2.编码规范"></a>2.编码规范</h3><p>  <strong>问题：</strong> 编码规范混乱<br>  <strong>解决：</strong> 严格按照编码规范和 ESLint 处理，规避报错和警告，如：</p>
 <ul>
